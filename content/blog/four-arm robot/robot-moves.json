@@ -1,0 +1,50 @@
+{
+    "data": [
+        {
+            "move": 1,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "status": "start"
+        },
+        {
+            "move": 2,
+            "position": {
+                "x": 10,
+                "y": 10,
+                "z": 0
+            },
+            "status": "pick"
+        },
+        {
+            "move": 3,
+            "position": {
+                "x": 20,
+                "y": 15,
+                "z": 5
+            },
+            "status": "move"
+        },
+        {
+            "move": 4,
+            "position": {
+                "x": 25,
+                "y": 25,
+                "z": 5
+            },
+            "status": "place"
+        },
+        {
+            "move": 5,
+            "position": {
+                "x": 30,
+                "y": 30,
+                "z": 0
+            },
+            "status": "end"
+        }
+    ],
+    "description": "Example of robotic moves during a chess-playing task. Each step represents a different phase in the process."
+}
