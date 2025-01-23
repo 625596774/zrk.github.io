@@ -1,4 +1,3 @@
-
 ---
 title: 🚗 Robotics Winter Camp: Intelligent Vehicle Project
 summary: A highlight of the intelligent vehicle system developed at Tsinghua University's Robotics Winter Camp, integrating design, programming, and real-time strategies.
