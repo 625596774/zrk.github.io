@@ -1,5 +1,5 @@
 ---
-title: 🤖 Tsinghua AI Challenge: Real-Time Strategy and Space Simulation
+title: 🤖 Tsinghua AI Challenge:Real-Time Strategy and Space Simulation
 summary: Explore the development of AI-driven strategies for space mining, construction, and combat in the Tsinghua AI Challenge. Awarded Third Prize (Top 10%).
 date: 2024-03-20
 authors:
