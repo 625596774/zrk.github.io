@@ -5,7 +5,6 @@ date: 2023-07-20
 authors:
   - Rongkui Zhang
 tags:
-  - Robotics
   - Intelligent Vehicle
   - Embedded Systems
   - Algorithm Development
