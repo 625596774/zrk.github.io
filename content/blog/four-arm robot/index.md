@@ -11,10 +11,19 @@ tags:
   - Simulink
   - Hugo
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com)"
+  caption: ""
 ---
 
 This project introduces an advanced **chess-playing robotic arm system**, which leverages distributed architecture, intelligent decision-making, and precise control techniques.
+
+{{< youtube Ee6I0n2lBgs >}}
+{{< youtube --bZ0yjVyoU >}}
+{{< youtube V8qzDk8Av-o >}}
+![Project Demo Video](https://www.youtube.com/watch?v=--bZ0yjVyoU)
+<video controls width="640">
+  <source src="https://www.youtube.com/watch?v=--bZ0yjVyoU" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Project Highlights
 
@@ -23,42 +32,8 @@ This project introduces an advanced **chess-playing robotic arm system**, which 
   - **MATLAB** for workspace simulation and initialization.  
   - **Simulink** for robot control logic, inverse kinematics, and sequence logic design.  
   - **Visual Studio** for decision-making algorithms utilizing a pre-trained chess AI.
-- Applied **plane fitting algorithms** to correct robotic arm positional errors, ensuring sub-millimeter precision.  
-- Innovated a **magnet-assisted gripper** and a passive leveling tool to handle under-actuated placement challenges.  
-
----
-
-## Data Visualization
-
-### Chess Movement Visualization
-
-To visualize the robot's movements and decisions, the following dynamic plot demonstrates a game's progress.
-
-Save your JSON data (e.g., `robot-moves.json`) and render with Hugo's shortcode:
-
-```go
-{{</* chart data="robot-moves" */>}}
-```
-
----
-
-### Robot Simulation Data: Plane Fitting
-
-Using **MATLAB** and **Simulink**, the plane fitting data can be rendered interactively. Below is the raw fitted trajectory data:
-
-```csv
-x,y,z
-0,0,0
-10,20,15
-20,40,30
-...
-```
-
-Render the table in your page:
-
-```go
-{{</* table path="fitted-plane.csv" header="true" caption="Fitted Plane Data for Robotic Arm Correction" */>}}
-```
+- Innovated a **magnet-assisted gripper** and a passive leveling tool using gravity to ensure horizontal placement in under-actuated operations, enhancing accuracy and compatibility with robotic arms of **varying DoF**.
+- Applied **plane fitting algorithms** to correct robotic arm positional errors, ensuring accurate precision.   
 
 ---
 
@@ -71,9 +46,11 @@ graph TD
 A[User Interaction] --> B{Decision System (AI)}
 B --> C[Simulink Control]
 C --> D[Actuate Arm]
-D -->|Check Result| E[Success/Retry]
+D -->|Check Result| E{Success or Retry?}
+E -->|Success| F[End]
+E -->|Retry| B
 ```
-
+![Chess Robot in Action](chess-robot.jpg)
 ---
 
 ## Challenges and Innovations
