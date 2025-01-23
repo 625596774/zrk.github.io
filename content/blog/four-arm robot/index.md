@@ -1,5 +1,5 @@
 ---
-title: 🤖 obotics-Controlled Chess and Drawing System with QARM Robotic ArmR
+title: 🤖 Robotics-Controlled Chess and Drawing System with QARM Robotic ArmR
 summary: Learn how an under-actuated robotic arm was engineered for human-robot chess-playing and drawing, with innovative architecture and precision control.
 date: 2025-01-20
 authors:
@@ -16,14 +16,14 @@ image:
 
 This project introduces an advanced **chess-playing robotic arm system**, which leverages distributed architecture, intelligent decision-making, and precise control techniques.
 
+Below are three videos showcasing the robot's capabilities: human-robot chess interaction, drawing a Christmas tree, and creating a heart.
+
 {{< youtube Ee6I0n2lBgs >}}
+
 {{< youtube --bZ0yjVyoU >}}
+
 {{< youtube V8qzDk8Av-o >}}
-![Project Demo Video](https://www.youtube.com/watch?v=--bZ0yjVyoU)
-<video controls width="640">
-  <source src="https://www.youtube.com/watch?v=--bZ0yjVyoU" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
 
 ## Project Highlights
 
@@ -43,14 +43,13 @@ Below is a simplified **flowchart** describing how various modules interact:
 
 ```mermaid
 graph TD
-A[User Interaction] --> B{Decision System (AI)}
+A[User Interaction] --> B{AI Decision System}
 B --> C[Simulink Control]
 C --> D[Actuate Arm]
 D -->|Check Result| E{Success or Retry?}
 E -->|Success| F[End]
 E -->|Retry| B
 ```
-![Chess Robot in Action](chess-robot.jpg)
 ---
 
 ## Challenges and Innovations
@@ -68,7 +67,7 @@ E -->|Retry| B
 - **Passive Adaptive Gripper**: Maintains a horizontal placement for under-actuated end-effectors via gravity-driven rotation.
 - **Distributed System Architecture**: Partitioned decision-making, control, and vision across three independent modules for enhanced scalability.
 
-
+![Chess Robot in Action](chess-robot.jpg)
 
 ---
 
