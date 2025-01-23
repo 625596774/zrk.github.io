@@ -5,16 +5,14 @@ date: 2023-07-20
 authors:
   - Rongkui Zhang
 tags:
-  - Robotics
-  - Intelligent Vehicle
-  - Embedded Systems
-  - Algorithm Development
-  - Mechatronics
+  - Robotics
+  - Intelligent Vehicle
+  - Embedded Systems
+  - Algorithm Development
+  - Mechatronics
 image:
   caption: ""
 ---
-
-
 This project highlights the achievements of the **Robotics Winter Camp at Tsinghua University**, where we designed, programmed, and tested an **intelligent vehicle system** capable of autonomous navigation and obstacle avoidance. Under a competitive framework, our team earned the **Third Prize (Top 10%)** for innovative design and implementation.
 
 {{< youtube 5rppJ7TiFYM >}}
