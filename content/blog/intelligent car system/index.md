@@ -1,92 +1,88 @@
 ---
 title: 🚗 Intelligent Obstacle-Avoiding and Line-Tracing Car System
-summary: Explore the design and implementation of an intelligent vehicle capable of line-tracing, obstacle-avoiding, and object-grasping tasks with precise control.
-date: 2025-01-20
+summary: Explore the development of an intelligent vehicle capable of obstacle avoidance, line tracing, and object grasping, integrating efficient algorithms and hardware design.
+date: 2024-07-30
 authors:
   - Rongkui Zhang
 tags:
-  - Mechatronics
-  - Control Systems
   - Robotics
+  - Mechatronics
   - Embedded Systems
-  - Hugo
+  - Control Systems
 image:
-  caption: "Image credit: Intelligent Vehicle Team, Tsinghua University"
+  caption: ""
 ---
 
-This project introduces a self-designed **intelligent vehicle system**, capable of completing challenging tasks including **line tracing, obstacle avoidance, and object grasping** under competitive constraints. The system integrates custom hardware design, embedded software development, and efficient control algorithms.
+This project showcases the design and implementation of an **intelligent vehicle system**, developed to perform three complex tasks: **line tracing**, **obstacle avoidance**, and **object grasping**. 
+The project integrates advanced software algorithms and innovative hardware structures, ensuring efficiency and flexibility in real-world applications.
+
+Below are the videos demonstrating the intelligent vehicle's line-tracing and obstacle-avoidance tasks.
+
+{{< youtube 4VCYTww5RbQ >}}
+
+{{< youtube qPjWvEpn9D4 >}}
 
 ## Project Highlights
 
-- **Hardware Design**: 
-  - Constructed a compact, two-layer vehicle chassis with a footprint of **200x200 mm**, ensuring agility and stability in competitive environments.
-  - Integrated a **two-wheel differential drive system**, paired with an auxiliary omni-wheel for directional control.
-  - Developed a **two-degree-of-freedom grasping mechanism**, utilizing servo-driven claws with sponge linings for precision handling.
+- **Line-Tracing Task**: 
+  - Leveraged OpenMV for image-based navigation along pre-defined tracks, using **dynamic thresholding** for accurate path detection.
+  - Developed PID-based speed control to maintain stability on sharp turns and narrow paths.
 
-- **Software Features**:
-  - Implemented a state machine in **STM32 C**, facilitating seamless switching between line-tracing, obstacle-avoidance, and grasping states.
-  - Utilized **OpenMV's camera module** for image processing tasks, including object recognition, line detection, and terminal area identification.
-  - Designed **PID speed control algorithms** for responsive movement and smooth turns during high-speed line tracing.
+- **Obstacle-Avoidance Task**: 
+  - Implemented a hybrid algorithm using **ultrasonic sensors** and IMU data to detect and bypass obstacles while navigating toward the destination.
+  - Used precise wall-following techniques to avoid getting trapped in loops during obstacle avoidance.
 
-- **Technical Achievements**:
-  - Demonstrated sub-second response times during **line-tracing tasks**.
-  - Achieved error-free obstacle avoidance using custom **ultrasonic fusion algorithms** and IMU-based correction mechanisms.
-  - Utilized **LAB color space processing** to eliminate interference from shadows and improve recognition reliability.
+- **Object Grasping Integration**: 
+  - Designed a lightweight, adaptive gripper driven by SG90 servos, ensuring stability during transport.
+  - Integrated grasping and placing processes seamlessly into both line-tracing and obstacle-avoidance tasks.
 
----
+## Hardware Design
 
-## Data Visualization
+- Constructed a two-layered chassis using 3D printing for efficient weight distribution, ensuring lightness and stability.
+- Adopted **two-wheel differential drive** for high maneuverability, supported by a rear omni-wheel for balance.
+- Integrated sensors (ultrasonic, IMU, OpenMV) with strategic placements for optimal data collection and processing.
 
-### Vehicle Path Simulation
+![claw in Action](clawnew.jpg)
 
-To illustrate the vehicle's trajectory and performance, use the following shortcode to embed a dynamic path map:
+![Car in Action](car.jpg)
 
-```go
-{{</* chart data="car-path.json" */>}}
-```
+## Software Architecture
 
----
-
-## Flowchart: Task Logic and System Workflow
-
-Below is the **state-machine flowchart**, detailing how the system transitions between states:
+### State-Machine Logic
 
 ```mermaid
 graph TD
-A[Start] -->|Detect Object| B{Grasp Object?}
-B -->|Yes| C[Line Tracing]
-B -->|No| D[Search for Object]
-C --> E{Obstacle Ahead?}
-E -->|Yes| F[Obstacle Avoidance]
-E -->|No| G[Continue to Goal]
-F --> C
-G --> H[Place Object]
-H --> I[End]
+A[Start] -->|Detect Object| B[Grasp Object]
+B --> C{Select Task}
+C -->|Line Tracing| D[Line-Tracing Mode]
+C -->|Obstacle Avoidance| E[Obstacle-Avoidance Mode]
+D --> F[Detect Destination]
+E --> F
+F --> G[Place Object]
+G --> H[End]
 ```
 
----
+### Key Features
+1. Utilized **OpenMV** for real-time image processing and object recognition.
+2. Communicated between modules using UART and Bluetooth protocols, ensuring real-time responsiveness.
+3. Enhanced task precision through the fusion of **dynamic state transitions** and **control algorithms**.
 
-## Challenges and Innovations
+## Innovations
 
-### Key Challenges:
-1. **Grip Stability**: Initial claw dimensions caused frequent failures in grasping objects. Redesigned the mechanism to increase grasp area and stability.
-2. **Obstacle Navigation**: Utilized ultrasonic modules to improve object detection, resolving interference issues caused by sensor proximity.
-3. **Trajectory Optimization**: Combined OpenMV image analysis and PID speed tuning to enhance navigation precision at high speeds.
+- Developed a **two-degree-of-freedom grasping mechanism**, utilizing servo-driven claws with sponge linings for precision handling.
+- Implemented **LAB color space processing** to reduce lighting-related inaccuracies during line tracing.
+- Integrated adaptive algor56ithms to dynamically balance speed and accuracy for different tasks.
 
-### Innovations:
-- Designed an **adaptive grasping mechanism** with motion-driven retraction to optimize handling and prevent obstructed vision.
-- Employed **inverse perspective transformation** to ensure accurate line tracking by transforming camera images into a bird’s-eye view.
-- Developed a hybrid obstacle-avoidance algorithm, combining **IMU-based correction** and **ultrasonic edge-detection** for reliable decision-making.
+## Challenges and Solutions
 
----
+### Line-Tracing Challenges
+- **Sharp Turns**: Improved PID tuning to handle tight curves without losing track.
+- **Shadow Interference**: Applied dynamic threshold adjustments to minimize errors caused by varying lighting.
 
-## Additional Resources
-
-For further details, explore the following references:
-1. [Hugo Documentation for Data Visualization](https://gohugo.io)
-2. [OpenMV for Embedded Vision Processing](https://openmv.io)
-3. [STM32 Development Guide](https://www.st.com)
+### Obstacle-Avoidance Challenges
+- **Sensor Interference**: Reduced ultrasonic sensor cross-talk through time delays between pings.
+- **Navigation Deadlocks**: Implemented wall-following corrections to bypass loop scenarios.
 
 ---
 
-Thank you for reviewing this project. Feel free to reach out for collaboration or inquiries! 🙌
+Thank you for exploring this project. Feel free to share your thoughts! 🙌

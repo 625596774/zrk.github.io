@@ -1,7 +1,7 @@
 ---
 title: 🤖 Robotics-Controlled Chess and Drawing System with QARM Robotic ArmR
 summary: Learn how an under-actuated robotic arm was engineered for human-robot chess-playing and drawing, with innovative architecture and precision control.
-date: 2025-01-20
+date: 2024-12-20
 authors:
   - Rongkui Zhang
 tags:
@@ -13,7 +13,6 @@ tags:
 image:
   caption: ""
 ---
-
 This project introduces an advanced **chess-playing robotic arm system**, which leverages distributed architecture, intelligent decision-making, and precise control techniques.
 
 Below are three videos showcasing the robot's capabilities: human-robot chess interaction, drawing a Christmas tree, and creating a heart.
