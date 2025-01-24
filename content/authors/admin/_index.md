@@ -37,7 +37,9 @@ profiles:
   - icon: academicons/cv
     url: "/uploads/resume.pdf"
     label: Download my resume
-
+  - icon: academicons/cv
+    url: "/resume/resume.pdf"
+    label: Download my resume
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
