@@ -35,10 +35,7 @@ profiles:
     label: E-mail Me
   # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
   - icon: academicons/cv
-    url: "/uploads/resume.pdf"
-    label: Download my resume
-  - icon: academicons/cv
-    url: "/resume/resume.pdf"
+    url: "https://github.com/625596774/resume/raw/main/resume.pdf"
     label: Download my resume
 
 # Highlight the author in author lists? (true/false)
