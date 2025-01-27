@@ -45,4 +45,4 @@ highlight_name: true
 website: ""
 ---
 
-I am a junior student in the Department of Mechanical Engineering at Tsinghua University. Research interests include robotics control, trajectory planning, and related fields. I have a foundational understanding of software such as MATLAB, Visual Studio, AutoCAD, SolidWorks, and STM32Cube.
+I am a junior student in the Department of Mechanical Engineering at Tsinghua University. Research interests include robotics control, trajectory planning, and related fields. I have a foundational understanding of software such as MATLAB, Visual Studio, AutoCAD, SolidWorks, and STM32Cube. I enjoy hands-on work and have a lot of practical experience.
