@@ -13,6 +13,8 @@ tags:
 image:
   caption: ""
 ---
+## Overview
+
 This project introduces an advanced **chess-playing robotic arm system**, which leverages distributed architecture, intelligent decision-making, and precise control techniques.
 
 Below are three videos showcasing the robot's capabilities: human-robot chess interaction, drawing a Christmas tree, and creating a heart.

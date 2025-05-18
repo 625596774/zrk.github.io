@@ -12,6 +12,7 @@ tags:
 image:
   caption: ""
 ---
+## Overview
 
 This project showcases the design and implementation of an **intelligent vehicle system**, developed to perform three complex tasks: **line tracing**, **obstacle avoidance**, and **object grasping**. 
 The project integrates advanced software algorithms and innovative hardware structures, ensuring efficiency and flexibility in real-world applications.

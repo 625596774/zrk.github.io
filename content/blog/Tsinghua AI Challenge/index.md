@@ -12,6 +12,7 @@ tags:
 image:
   caption: ""
 ---
+## Overview
 
 This project showcases the development of intelligent algorithms for controlling spacecraft in a **real-time strategy simulation** during the **Tsinghua AI Challenge**. The system integrates resource management, construction, and combat mechanics within competitive constraints, earning the **Third Prize (Top 10%)**.
 
