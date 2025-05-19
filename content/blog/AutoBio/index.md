@@ -1,10 +1,11 @@
 ---
-title: 🧬 AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory
-summary: Explore the development of AutoBio, a project focusing on robotic automation in digital biology laboratories with multi-stage modeling, robot operation logic, and more.
+title: "AutoBio: Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory"
+summary: "Multi-stage modeling, simulation, and benchmarking of lab automation tasks in MuJoCo."
 date: 2025-03-01
 authors:
   - Rongkui Zhang
 tags:
+  - AutoBio
   - Robotics
   - Simulation
   - MuJoCo
