@@ -45,4 +45,4 @@ highlight_name: true
 website: ""
 ---
 
-I am currently pursuing a Bachelor of Science in Mechanical Engineering at Tsinghua University, with a Major GPA of 3.73/4.00. I am ranked in the top 20% of my department, and my research interests include robotics, control systems, and mechatronic design, I have a foundational understanding of software such as MATLAB, Visual Studio, AutoCAD, SolidWorks, and STM32Cube. I enjoy hands-on work and have a lot of practical experience.
+I am currently pursuing a Bachelor of Science in **Mechanical Engineering** at **Tsinghua University**, with a Major GPA of **3.73/4.00**. I am ranked in the **top 20%** of my department, and my research interests include **robotics, control systems, and mechatronic design**, I have a foundational understanding of software such as MATLAB, Visual Studio, AutoCAD, SolidWorks, and STM32Cube. I enjoy hands-on work and have a lot of practical experience.
