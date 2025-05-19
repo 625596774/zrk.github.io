@@ -15,7 +15,7 @@ image:
 ---
 ## Overview
 
-This project introduces an advanced **chess-playing robotic arm system**, which leverages distributed architecture, intelligent decision-making, and precise control techniques.
+This project introduces an advanced **chess-playing robotic arm system**, which leverages distributed architecture, intelligent decision-making, and precise control techniques.(**Patent Pending, Application No. 202510598609.1, 1st Inventor**).
 
 Below are three videos showcasing the robot's capabilities: human-robot chess interaction, drawing a Christmas tree, and creating a heart.
 
