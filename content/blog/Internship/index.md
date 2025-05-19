@@ -1,7 +1,7 @@
 ---
 title: "Internship: AI & Robotics Lab, Tsinghua University Shenzhen Graduate School"
 summary: "Calibration and operation of motion-capture systems and data processing for six-axis robotic arm control."
-date: 2025-05-19
+date: 2023-07-19
 authors:
   - Rongkui Zhang
 tags:
